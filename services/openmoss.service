@@ -1,0 +1,18 @@
+[Unit]
+Description=OpenMOSS Backend Service
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/openmoss
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/opt/python-env/bin/python3 -m uvicorn app.main:app --host 0.0.0.0 --port 6565 --access-log
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,50 @@
+# Credentials & Secrets
+.env
+*.env
+config.yaml
+/opt/credentials/
+/root/openmoss-credentials.txt
+
+# Generated Files
+/data/
+/logs/
+*.log
+npm-debug.log*
+
+# Node modules
+node_modules/
+dist/
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Project specific
+static/
+/opt/openclaw/
+/opt/openmoss/
+/opt/python-env/
+
+# Temporary
+tmp/
+temp/
