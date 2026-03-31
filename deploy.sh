@@ -75,7 +75,6 @@ apt-get install -y \
     python3-pip \
     python3-venv \
     nodejs \
-    npm \
     ufw \
     fail2ban \
     htop \
